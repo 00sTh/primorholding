@@ -29,11 +29,11 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. Prisma schema has all five models (Service, Testimonial, BlogPost, Contact, SiteSettings) and `prisma db push` succeeds
   4. Navigating to `/admin` without authentication redirects to sign-in -- proxy.ts with Clerk v7 protects all admin routes
   5. Base UI components (Button, Card, Section wrapper) render with the dark blue theme and professional typography
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 01-01: TBD
-- [ ] 01-02: TBD
+- [ ] 01-01-PLAN.md -- Project scaffold, .gitignore, dependencies, Docker, config files, env template, CLAUDE.md
+- [ ] 01-02-PLAN.md -- Prisma schema (5 models), Clerk v7 proxy.ts, base UI components (Button, Card, Section)
 
 ### Phase 2: Public Site
 **Goal**: A visitor can land on the site, learn about Primor Holding and its founder, browse services and testimonials, submit a contact form or tap WhatsApp, and find legal/privacy pages -- all with polished animations
@@ -90,7 +90,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation & Scaffolding | 0/2 | Not started | - |
+| 1. Foundation & Scaffolding | 0/2 | Planning complete | - |
 | 2. Public Site | 0/3 | Not started | - |
 | 3. Admin Panel | 0/2 | Not started | - |
 | 4. Deploy & SEO | 0/1 | Not started | - |
