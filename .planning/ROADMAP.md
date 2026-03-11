@@ -45,12 +45,12 @@ Plans:
   3. A floating WhatsApp button is visible on every page and opens WhatsApp with the configured phone number
   4. Legal pages (Politica de Privacidade, Termos de Uso) are accessible from the footer, and a cookie consent banner appears on first visit with accept/reject that persists the choice
   5. Navigation bar is fixed at top with logo, anchor links to each section, and a CTA button that scrolls to contact
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- [ ] 02-01: TBD
-- [ ] 02-02: TBD
-- [ ] 02-03: TBD
+- [ ] 02-01-PLAN.md -- Dependencies (framer-motion, zod), seed data, motion wrapper, Navbar, Footer, WhatsApp button, cookie banner, site layout
+- [ ] 02-02-PLAN.md -- Homepage sections: HeroSection, AboutSection, ServicesSection, TestimonialsSection, page.tsx
+- [ ] 02-03-PLAN.md -- Contact Server Action, ContactSection, legal pages (/privacidade, /termos), wire ContactSection into page.tsx
 
 ### Phase 3: Admin Panel
 **Goal**: The site owner can sign in and manage all dynamic content (services, testimonials, blog posts, contacts) without developer help
