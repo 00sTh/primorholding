@@ -40,11 +40,11 @@
 
 ### Deploy & Infrastructure
 
-- [ ] **DEPLOY-01**: Repositorio GitHub publico criado na conta `00sth` com README descritivo -- sem secrets, sem .env
-- [ ] **DEPLOY-02**: Deploy funcional no Vercel com todas as variaveis de ambiente configuradas no painel Vercel
-- [ ] **DEPLOY-03**: Meta tags SEO (title, description, keywords), OpenGraph para compartilhamento em redes sociais
-- [ ] **DEPLOY-04**: `sitemap.xml` e `robots.txt` gerados automaticamente pelo Next.js
-- [ ] **DEPLOY-05**: Seed do banco com dados iniciais -- 3 servicos modelo, 1 depoimento de exemplo, SiteSettings padrao
+- [x] **DEPLOY-01**: Repositorio GitHub publico criado na conta `00sth` com README descritivo -- sem secrets, sem .env
+- [x] **DEPLOY-02**: Deploy funcional no Vercel com todas as variaveis de ambiente configuradas no painel Vercel
+- [x] **DEPLOY-03**: Meta tags SEO (title, description, keywords), OpenGraph para compartilhamento em redes sociais
+- [x] **DEPLOY-04**: `sitemap.xml` e `robots.txt` gerados automaticamente pelo Next.js
+- [x] **DEPLOY-05**: Seed do banco com dados iniciais -- 3 servicos modelo, 1 depoimento de exemplo, SiteSettings padrao
 
 ## v2 Requirements
 
@@ -107,11 +107,11 @@
 | ADMIN-04 | Phase 3 | Complete |
 | ADMIN-05 | Phase 3 | Complete |
 | ADMIN-06 | Phase 3 | Complete |
-| DEPLOY-01 | Phase 4 | Pending |
-| DEPLOY-02 | Phase 4 | Pending |
-| DEPLOY-03 | Phase 4 | Pending |
-| DEPLOY-04 | Phase 4 | Pending |
-| DEPLOY-05 | Phase 4 | Pending |
+| DEPLOY-01 | Phase 4 | Complete |
+| DEPLOY-02 | Phase 4 | Complete |
+| DEPLOY-03 | Phase 4 | Complete |
+| DEPLOY-04 | Phase 4 | Complete |
+| DEPLOY-05 | Phase 4 | Complete |
 
 **Coverage:**
 - v1 requirements: 29 total

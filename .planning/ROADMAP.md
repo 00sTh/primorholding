@@ -15,7 +15,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 1: Foundation & Scaffolding** - Project setup with Next.js 16, Prisma 7, Clerk v7, Docker, and visual theme (completed 2026-03-11)
 - [x] **Phase 2: Public Site** - All public-facing pages, sections, contact flow, legal pages, and animations (completed 2026-03-11)
 - [x] **Phase 3: Admin Panel** - Clerk-protected CMS with CRUD for services, testimonials, blog posts, and contacts (completed 2026-03-11)
-- [ ] **Phase 4: Deploy & SEO** - GitHub repo, Vercel deploy, SEO meta tags, sitemap, and seed data
+- [x] **Phase 4: Deploy & SEO** - GitHub repo, Vercel deploy, SEO meta tags, sitemap, and seed data (completed 2026-03-11)
 
 ## Phase Details
 
@@ -93,4 +93,4 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4
 | 1. Foundation & Scaffolding | 2/2 | Complete    | 2026-03-11 |
 | 2. Public Site | 3/3 | Complete    | 2026-03-11 |
 | 3. Admin Panel | 2/2 | Complete    | 2026-03-11 |
-| 4. Deploy & SEO | 0/1 | Not started | - |
+| 4. Deploy & SEO | 1/1 | Complete   | 2026-03-11 |

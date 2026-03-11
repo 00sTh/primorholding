@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: completed
-stopped_at: Completed 03-02-PLAN.md
-last_updated: "2026-03-11T20:47:31.654Z"
+stopped_at: "Completed 04-01 auto tasks, awaiting checkpoint:human-verify for Vercel deploy"
+last_updated: "2026-03-11T22:55:15.045Z"
 last_activity: 2026-03-11 -- Completed 03-01 admin foundation (Cloudinary, layout, Services CRUD, Testimonials CRUD) (18 min)
 progress:
   total_phases: 4
-  completed_phases: 3
-  total_plans: 7
-  completed_plans: 7
+  completed_phases: 4
+  total_plans: 8
+  completed_plans: 8
   percent: 86
 ---
 
@@ -56,6 +56,7 @@ Progress: [█████████░] 86%
 | Phase 02-public-site P03 | 2min | 2 tasks | 5 files |
 | Phase 03-admin-panel P01 | 18min | 3 tasks | 16 files |
 | Phase 03-admin-panel P02 | 3 | 2 tasks | 7 files |
+| Phase 04-deploy-and-seo P01 | 9 | 3 tasks | 14 files |
 
 ## Accumulated Context
 
@@ -91,6 +92,9 @@ Recent decisions affecting current work:
 - [Phase 03-admin-panel]: publishedAt set only on first publish — re-saving already-published post preserves original date
 - [Phase 03-admin-panel]: Contacts page is pure Server Component — toggleContactRead.bind used as form action, no client boundary needed
 - [Phase 03-admin-panel]: React.Fragment with key used for map() producing multiple sibling rows — short fragment syntax does not accept key prop
+- [Phase 04-deploy-and-seo]: @prisma/client must be explicit dependency in Prisma 7 — generated client imports @prisma/client/runtime/client
+- [Phase 04-deploy-and-seo]: export const dynamic = force-dynamic on all DB-querying pages — Neon WebSocket can't connect in static prerender worker processes
+- [Phase 04-deploy-and-seo]: .catch(() => null) on layout Prisma queries allows legal pages (privacidade, termos) to build statically without DB
 
 ### Pending Todos
 
@@ -104,6 +108,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-11T20:44:12.240Z
-Stopped at: Completed 03-02-PLAN.md
+Last session: 2026-03-11T22:55:15.042Z
+Stopped at: Completed 04-01 auto tasks, awaiting checkpoint:human-verify for Vercel deploy
 Resume file: None
