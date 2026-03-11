@@ -37,9 +37,9 @@ O visitante deve sair com credibilidade suficiente para entrar em contato — o 
 
 ## Context
 
-- **Empresa:** Primor Holding — consultoria empresarial (estratégia, gestão, reestruturação)
+- **Empresa:** PRIMOR PARTNERSHIP HOLDING LTDA
 - **Fundador/Dono:** João Antônio Lopes Corrêa
-- **CNPJ:** A ser fornecido pelo usuário (necessário para rodapé e páginas legais)
+- **CNPJ:** 59.120.382/0001-30
 - **Deploy:** Vercel (projeto simples, sem necessidade de infra complexa)
 - **Repositório:** GitHub público em conta 00sth — nenhuma env deve ser commitada
 - **Stack decidida:** Next.js 16 (App Router), TypeScript, Tailwind CSS v4, Prisma + Neon (PostgreSQL), Clerk v7 (admin auth), Cloudinary (imagens), Docker (dev local)
@@ -53,7 +53,7 @@ O visitante deve sair com credibilidade suficiente para entrar em contato — o 
 - **Repo público:** Nenhuma secret, env ou dado sensível no código — apenas .env.local + .env.example
 - **LGPD:** Site precisa de banner de cookies, política de privacidade, termos de uso
 - **Auth:** Apenas admin usa autenticação (Clerk) — visitantes são sempre anônimos
-- **CNPJ pendente:** Páginas legais precisam do CNPJ para serem finalizadas
+- **CNPJ:** 59.120.382/0001-30 — disponível para páginas legais e rodapé
 
 ## Key Decisions
 
