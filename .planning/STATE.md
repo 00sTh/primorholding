@@ -1,3 +1,19 @@
+---
+gsd_state_version: 1.0
+milestone: v1.0
+milestone_name: milestone
+status: completed
+stopped_at: Completed 01-02-PLAN.md (Phase 1 complete)
+last_updated: "2026-03-11T19:31:16.171Z"
+last_activity: 2026-03-11 -- Completed 01-02 database/auth/theme plan (3 min)
+progress:
+  total_phases: 4
+  completed_phases: 1
+  total_plans: 2
+  completed_plans: 2
+  percent: 100
+---
+
 # Project State
 
 ## Project Reference
@@ -5,35 +21,36 @@
 See: .planning/PROJECT.md (updated 2026-03-11)
 
 **Core value:** O visitante deve sair com credibilidade suficiente para entrar em contato -- o site precisa transmitir autoridade e facilitar o contato.
-**Current focus:** Phase 1: Foundation & Scaffolding
+**Current focus:** Phase 1 complete. Ready for Phase 2: Public Site
 
 ## Current Position
 
-Phase: 1 of 4 (Foundation & Scaffolding)
-Plan: 1 of 2 in current phase
-Status: Executing
-Last activity: 2026-03-11 -- Completed 01-01 scaffold plan (8 min)
+Phase: 1 of 4 (Foundation & Scaffolding) -- COMPLETE
+Plan: 2 of 2 in current phase (all done)
+Status: Phase complete
+Last activity: 2026-03-11 -- Completed 01-02 database/auth/theme plan (3 min)
 
-Progress: [█░░░░░░░░░] 12%
+Progress: [██████████] 100%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 1
-- Average duration: 8 min
-- Total execution time: 0.13 hours
+- Total plans completed: 2
+- Average duration: 5.5 min
+- Total execution time: 0.18 hours
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
-| 1. Foundation | 1 | 8 min | 8 min |
+| 1. Foundation | 2 | 11 min | 5.5 min |
 
 **Recent Trend:**
-- Last 5 plans: 01-01 (8 min)
-- Trend: Starting
+- Last 5 plans: 01-01 (8 min), 01-02 (3 min)
+- Trend: Accelerating
 
 *Updated after each plan completion*
+| Phase 01 P02 | 3min | 3 tasks | 11 files |
 
 ## Accumulated Context
 
@@ -48,6 +65,10 @@ Recent decisions affecting current work:
 - 01-01: Used @font-face in CSS for Playfair Display instead of next/font/google -- consistent with Tailwind v4 CSS-first approach
 - 01-01: PrismaNeon adapter for both Docker dev and Neon prod -- single code path
 - 01-01: pnpm.onlyBuiltDependencies in package.json for non-interactive build approval
+- 01-02: proxy.ts with export default clerkMiddleware() -- Clerk v7 + Next.js 16 convention confirmed working (build shows "Proxy (Middleware)")
+- 01-02: Button uses CVA with 3 variants, no Radix Slot -- minimal footprint for institutional site
+- 01-02: Schema validated without db push -- Docker not available in execution env, deferred to first dev session
+- [Phase 01]: 01-02: proxy.ts with export default clerkMiddleware() -- Clerk v7 + Next.js 16 convention confirmed working
 
 ### Pending Todos
 
@@ -56,10 +77,11 @@ None yet.
 ### Blockers/Concerns
 
 - CNPJ pendente: Legal pages (SITE-09, SITE-10) will use placeholders until the real CNPJ is provided
-- Clerk v7 released today (2026-03-11): proxy.ts compatibility needs hands-on validation in Phase 1. Fallback to middleware.ts + Clerk v6.39 documented in research.
+- Clerk v7 validated: proxy.ts compiles and builds successfully with clerkMiddleware. Build output confirms "Proxy (Middleware)" recognition. No fallback needed.
+- Docker not available in execution environment: `prisma db push` deferred. Run `docker compose up -d && pnpm prisma db push` when Docker is available.
 
 ## Session Continuity
 
-Last session: 2026-03-11
-Stopped at: Completed 01-01-PLAN.md
+Last session: 2026-03-11T19:31:11.842Z
+Stopped at: Completed 01-02-PLAN.md (Phase 1 complete)
 Resume file: None
