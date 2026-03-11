@@ -61,3 +61,8 @@ body {
   background-color: rgba(201, 162, 39, 0.3);
   color: var(--cream);
 }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
