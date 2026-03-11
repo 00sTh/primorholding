@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: completed
-stopped_at: Completed 01-02-PLAN.md (Phase 1 complete)
-last_updated: "2026-03-11T19:34:41.595Z"
+stopped_at: Completed 02-01-PLAN.md
+last_updated: "2026-03-11T20:06:31.860Z"
 last_activity: 2026-03-11 -- Completed 01-02 database/auth/theme plan (3 min)
 progress:
   total_phases: 4
   completed_phases: 1
-  total_plans: 2
-  completed_plans: 2
+  total_plans: 5
+  completed_plans: 3
   percent: 100
 ---
 
@@ -21,16 +21,16 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-11)
 
 **Core value:** O visitante deve sair com credibilidade suficiente para entrar em contato -- o site precisa transmitir autoridade e facilitar o contato.
-**Current focus:** Phase 1 complete. Ready for Phase 2: Public Site
+**Current focus:** Phase 2 in progress. Plan 1 of 3 complete.
 
 ## Current Position
 
-Phase: 1 of 4 (Foundation & Scaffolding) -- COMPLETE
-Plan: 2 of 2 in current phase (all done)
-Status: Phase complete
-Last activity: 2026-03-11 -- Completed 01-02 database/auth/theme plan (3 min)
+Phase: 2 of 4 (Public Site) -- In Progress
+Plan: 1 of 3 in current phase (02-01 done)
+Status: Plan complete, next: 02-02
+Last activity: 2026-03-11 -- Completed 02-01 site shell/layout plan (12 min)
 
-Progress: [██████████] 100%
+Progress: [██████░░░░] 60%
 
 ## Performance Metrics
 
@@ -51,6 +51,7 @@ Progress: [██████████] 100%
 
 *Updated after each plan completion*
 | Phase 01 P02 | 3min | 3 tasks | 11 files |
+| Phase 02-public-site P01 | 12min | 3 tasks | 9 files |
 
 ## Accumulated Context
 
@@ -69,6 +70,10 @@ Recent decisions affecting current work:
 - 01-02: Button uses CVA with 3 variants, no Radix Slot -- minimal footprint for institutional site
 - 01-02: Schema validated without db push -- Docker not available in execution env, deferred to first dev session
 - [Phase 01]: 01-02: proxy.ts with export default clerkMiddleware() -- Clerk v7 + Next.js 16 convention confirmed working
+- [Phase 02-01]: Seed file uses PrismaNeon adapter (not bare PrismaClient) -- Prisma 7 requires adapter argument
+- [Phase 02-01]: CookieBanner initializes visible=false for SSR safety, reads localStorage only in useEffect
+- [Phase 02-01]: Layout queries SiteSettings with select{} to exclude updatedAt DateTime field
+- [Phase 02-01]: Navbar uses plain <a> anchors for hash links to preserve in-page scroll behavior
 
 ### Pending Todos
 
@@ -82,6 +87,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-11T19:31:11.842Z
-Stopped at: Completed 01-02-PLAN.md (Phase 1 complete)
+Last session: 2026-03-11T20:06:31.858Z
+Stopped at: Completed 02-01-PLAN.md
 Resume file: None
