@@ -4,6 +4,7 @@ import { HeroSection } from "@/components/site/HeroSection";
 import { AboutSection } from "@/components/site/AboutSection";
 import { ServicesSection } from "@/components/site/ServicesSection";
 import { TestimonialsSection } from "@/components/site/TestimonialsSection";
+import { ContactSection } from "@/components/site/ContactSection";
 
 export default async function HomePage() {
   const [services, testimonials, settings] = await Promise.all([
@@ -64,6 +65,7 @@ export default async function HomePage() {
       />
       <ServicesSection services={services} />
       <TestimonialsSection testimonials={testimonials} />
+      <ContactSection />
     </>
   );
 }
