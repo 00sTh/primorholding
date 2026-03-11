@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import type { Metadata } from "next";
 import { prisma } from "@/lib/prisma";
 import { COMPANY } from "@/lib/constants";
@@ -20,41 +22,47 @@ export const metadata: Metadata = {
 
 export default async function HomePage() {
   const [services, testimonials, settings] = await Promise.all([
-    prisma.service.findMany({
-      where: { active: true },
-      orderBy: { order: "asc" },
-      select: {
-        id: true,
-        title: true,
-        description: true,
-        icon: true,
-        imageUrl: true,
-      },
-    }),
-    prisma.testimonial.findMany({
-      where: { active: true },
-      orderBy: { order: "asc" },
-      select: {
-        id: true,
-        name: true,
-        company: true,
-        role: true,
-        content: true,
-        photoUrl: true,
-        rating: true,
-      },
-    }),
-    prisma.siteSettings.findUnique({
-      where: { id: "default" },
-      select: {
-        heroTitle: true,
-        heroSubtitle: true,
-        aboutTitle: true,
-        aboutText: true,
-        founderName: true,
-        founderPhotoUrl: true,
-      },
-    }),
+    prisma.service
+      .findMany({
+        where: { active: true },
+        orderBy: { order: "asc" },
+        select: {
+          id: true,
+          title: true,
+          description: true,
+          icon: true,
+          imageUrl: true,
+        },
+      })
+      .catch(() => []),
+    prisma.testimonial
+      .findMany({
+        where: { active: true },
+        orderBy: { order: "asc" },
+        select: {
+          id: true,
+          name: true,
+          company: true,
+          role: true,
+          content: true,
+          photoUrl: true,
+          rating: true,
+        },
+      })
+      .catch(() => []),
+    prisma.siteSettings
+      .findUnique({
+        where: { id: "default" },
+        select: {
+          heroTitle: true,
+          heroSubtitle: true,
+          aboutTitle: true,
+          aboutText: true,
+          founderName: true,
+          founderPhotoUrl: true,
+        },
+      })
+      .catch(() => null),
   ]);
 
   return (

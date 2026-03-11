@@ -9,16 +9,18 @@ export default async function SiteLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const settings = await prisma.siteSettings.findUnique({
-    where: { id: "default" },
-    select: {
-      cnpj: true,
-      email: true,
-      instagramUrl: true,
-      linkedinUrl: true,
-      whatsappNumber: true,
-    },
-  });
+  const settings = await prisma.siteSettings
+    .findUnique({
+      where: { id: "default" },
+      select: {
+        cnpj: true,
+        email: true,
+        instagramUrl: true,
+        linkedinUrl: true,
+        whatsappNumber: true,
+      },
+    })
+    .catch(() => null);
 
   return (
     <>

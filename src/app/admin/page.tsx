@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import { prisma } from "@/lib/prisma";
 import { Briefcase, Star, FileText, MessageSquare } from "lucide-react";
 
