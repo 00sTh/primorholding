@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { prisma } from "@/lib/prisma";
 import { COMPANY } from "@/lib/constants";
 import { HeroSection } from "@/components/site/HeroSection";
@@ -5,6 +6,17 @@ import { AboutSection } from "@/components/site/AboutSection";
 import { ServicesSection } from "@/components/site/ServicesSection";
 import { TestimonialsSection } from "@/components/site/TestimonialsSection";
 import { ContactSection } from "@/components/site/ContactSection";
+
+export const metadata: Metadata = {
+  title: "Consultoria Empresarial de Excelencia",
+  description:
+    "Transforme sua empresa com consultoria especializada em estrategia, reestruturacao e gestao de performance. Entre em contato com a Primor Holding.",
+  openGraph: {
+    title: "Primor Holding — Consultoria Empresarial",
+    description:
+      "Transforme sua empresa com consultoria especializada em estrategia, reestruturacao e gestao de performance.",
+  },
+};
 
 export default async function HomePage() {
   const [services, testimonials, settings] = await Promise.all([
