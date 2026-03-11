@@ -62,11 +62,11 @@ Plans:
   3. Admin can create, edit, and delete testimonials with client photo upload -- changes are immediately visible on the public site
   4. Admin can create and edit blog posts with draft/published status (no public page in v1, content prepared for v2)
   5. Admin can view contact form submissions, see details, and mark messages as read/unread
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 03-01: TBD
-- [ ] 03-02: TBD
+- [ ] 03-01-PLAN.md -- Cloudinary helper, admin layout + sign-in + dashboard, Services CRUD, Testimonials CRUD
+- [ ] 03-02-PLAN.md -- Blog posts CRUD (draft/published), Contacts viewer with read/unread toggle
 
 ### Phase 4: Deploy & SEO
 **Goal**: The site is live on Vercel, discoverable by search engines, and populated with initial content
