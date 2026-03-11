@@ -3,15 +3,15 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: completed
-stopped_at: Completed 02-01-PLAN.md
-last_updated: "2026-03-11T20:06:31.860Z"
-last_activity: 2026-03-11 -- Completed 01-02 database/auth/theme plan (3 min)
+stopped_at: Completed 02-02-PLAN.md
+last_updated: "2026-03-11T20:11:01.764Z"
+last_activity: 2026-03-11 -- Completed 02-01 site shell/layout plan (12 min)
 progress:
   total_phases: 4
   completed_phases: 1
   total_plans: 5
-  completed_plans: 3
-  percent: 100
+  completed_plans: 4
+  percent: 60
 ---
 
 # Project State
@@ -21,16 +21,16 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-11)
 
 **Core value:** O visitante deve sair com credibilidade suficiente para entrar em contato -- o site precisa transmitir autoridade e facilitar o contato.
-**Current focus:** Phase 2 in progress. Plan 1 of 3 complete.
+**Current focus:** Phase 2 in progress. Plan 2 of 3 complete.
 
 ## Current Position
 
 Phase: 2 of 4 (Public Site) -- In Progress
-Plan: 1 of 3 in current phase (02-01 done)
-Status: Plan complete, next: 02-02
-Last activity: 2026-03-11 -- Completed 02-01 site shell/layout plan (12 min)
+Plan: 2 of 3 in current phase (02-01, 02-02 done)
+Status: Plan complete, next: 02-03
+Last activity: 2026-03-11 -- Completed 02-02 homepage sections plan (2 min)
 
-Progress: [██████░░░░] 60%
+Progress: [████████░░] 80%
 
 ## Performance Metrics
 
@@ -52,6 +52,7 @@ Progress: [██████░░░░] 60%
 *Updated after each plan completion*
 | Phase 01 P02 | 3min | 3 tasks | 11 files |
 | Phase 02-public-site P01 | 12min | 3 tasks | 9 files |
+| Phase 02-public-site P02 | 2min | 2 tasks | 5 files |
 
 ## Accumulated Context
 
@@ -74,6 +75,9 @@ Recent decisions affecting current work:
 - [Phase 02-01]: CookieBanner initializes visible=false for SSR safety, reads localStorage only in useEffect
 - [Phase 02-01]: Layout queries SiteSettings with select{} to exclude updatedAt DateTime field
 - [Phase 02-01]: Navbar uses plain <a> anchors for hash links to preserve in-page scroll behavior
+- [Phase 02-02]: HeroSection uses animate (not whileInView) — hero is above the fold on load
+- [Phase 02-02]: ServicesSection uses Briefcase as default icon — dynamic icon lookup deferred
+- [Phase 02-02]: Prisma select with no Date fields in page.tsx — serialization safety for Promise.all fetches
 
 ### Pending Todos
 
@@ -87,6 +91,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-11T20:06:31.858Z
-Stopped at: Completed 02-01-PLAN.md
+Last session: 2026-03-11T20:11:01.762Z
+Stopped at: Completed 02-02-PLAN.md
 Resume file: None
