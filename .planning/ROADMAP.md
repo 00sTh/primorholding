@@ -32,7 +32,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Plans**: 2 plans
 
 Plans:
-- [ ] 01-01-PLAN.md -- Project scaffold, .gitignore, dependencies, Docker, config files, env template, CLAUDE.md
+- [x] 01-01-PLAN.md -- Project scaffold, .gitignore, dependencies, Docker, config files, env template, CLAUDE.md
 - [ ] 01-02-PLAN.md -- Prisma schema (5 models), Clerk v7 proxy.ts, base UI components (Button, Card, Section)
 
 ### Phase 2: Public Site
@@ -90,7 +90,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation & Scaffolding | 0/2 | Planning complete | - |
+| 1. Foundation & Scaffolding | 1/2 | In progress | - |
 | 2. Public Site | 0/3 | Not started | - |
 | 3. Admin Panel | 0/2 | Not started | - |
 | 4. Deploy & SEO | 0/1 | Not started | - |

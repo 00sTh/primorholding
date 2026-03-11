@@ -10,28 +10,28 @@ See: .planning/PROJECT.md (updated 2026-03-11)
 ## Current Position
 
 Phase: 1 of 4 (Foundation & Scaffolding)
-Plan: 0 of 2 in current phase
-Status: Ready to plan
-Last activity: 2026-03-11 -- Roadmap created with 4 phases covering 29 requirements
+Plan: 1 of 2 in current phase
+Status: Executing
+Last activity: 2026-03-11 -- Completed 01-01 scaffold plan (8 min)
 
-Progress: [░░░░░░░░░░] 0%
+Progress: [█░░░░░░░░░] 12%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 0
-- Average duration: -
-- Total execution time: 0 hours
+- Total plans completed: 1
+- Average duration: 8 min
+- Total execution time: 0.13 hours
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
-| - | - | - | - |
+| 1. Foundation | 1 | 8 min | 8 min |
 
 **Recent Trend:**
-- Last 5 plans: -
-- Trend: -
+- Last 5 plans: 01-01 (8 min)
+- Trend: Starting
 
 *Updated after each plan completion*
 
@@ -45,6 +45,9 @@ Recent decisions affecting current work:
 - Roadmap: 4 phases derived from requirement categories (Foundation, Public Site, Admin Panel, Deploy)
 - Roadmap: LGPD pages (SITE-09, SITE-10, SITE-11) kept in Phase 2 with other public site content rather than split to a separate polish phase
 - Roadmap: Animations (SITE-12) kept in Phase 2 -- the public site is not complete without its visual polish
+- 01-01: Used @font-face in CSS for Playfair Display instead of next/font/google -- consistent with Tailwind v4 CSS-first approach
+- 01-01: PrismaNeon adapter for both Docker dev and Neon prod -- single code path
+- 01-01: pnpm.onlyBuiltDependencies in package.json for non-interactive build approval
 
 ### Pending Todos
 
@@ -58,5 +61,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-03-11
-Stopped at: Roadmap created, ready to plan Phase 1
+Stopped at: Completed 01-01-PLAN.md
 Resume file: None

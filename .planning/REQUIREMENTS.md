@@ -7,9 +7,9 @@
 
 ### Foundation
 
-- [ ] **FOUND-01**: Projeto Next.js 16 scaffoldado com TypeScript, Tailwind v4, Prisma 7 e Docker Compose (PostgreSQL local)
-- [ ] **FOUND-02**: `.gitignore` configurado antes de qualquer commit -- nenhuma env, secret ou chave de API pode vazar no repo publico
-- [ ] **FOUND-03**: `.env.example` com todos os campos necessarios (sem valores reais) e CLAUDE.md do projeto documentado
+- [x] **FOUND-01**: Projeto Next.js 16 scaffoldado com TypeScript, Tailwind v4, Prisma 7 e Docker Compose (PostgreSQL local)
+- [x] **FOUND-02**: `.gitignore` configurado antes de qualquer commit -- nenhuma env, secret ou chave de API pode vazar no repo publico
+- [x] **FOUND-03**: `.env.example` com todos os campos necessarios (sem valores reais) e CLAUDE.md do projeto documentado
 - [ ] **FOUND-04**: `proxy.ts` configurado com Clerk v7 protegendo rotas `/admin/*`
 - [ ] **FOUND-05**: Schema Prisma com modelos: Service, Testimonial, BlogPost, Contact, SiteSettings
 - [ ] **FOUND-06**: Tema visual configurado -- azul escuro (#0A1628 ou similar), tipografia profissional, componentes base (Button, Card, Section)
@@ -83,9 +83,9 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| FOUND-01 | Phase 1 | Pending |
-| FOUND-02 | Phase 1 | Pending |
-| FOUND-03 | Phase 1 | Pending |
+| FOUND-01 | Phase 1 | Complete |
+| FOUND-02 | Phase 1 | Complete |
+| FOUND-03 | Phase 1 | Complete |
 | FOUND-04 | Phase 1 | Pending |
 | FOUND-05 | Phase 1 | Pending |
 | FOUND-06 | Phase 1 | Pending |
