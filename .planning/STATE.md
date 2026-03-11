@@ -2,16 +2,16 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: completed
-stopped_at: Completed 02-02-PLAN.md
-last_updated: "2026-03-11T20:11:01.764Z"
-last_activity: 2026-03-11 -- Completed 02-01 site shell/layout plan (12 min)
+status: in-progress
+stopped_at: Completed 02-03-PLAN.md
+last_updated: "2026-03-11T20:15:21Z"
+last_activity: 2026-03-11 -- Completed 02-03 contact form + legal pages plan (2 min)
 progress:
   total_phases: 4
-  completed_phases: 1
+  completed_phases: 2
   total_plans: 5
-  completed_plans: 4
-  percent: 60
+  completed_plans: 5
+  percent: 100
 ---
 
 # Project State
@@ -21,16 +21,16 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-11)
 
 **Core value:** O visitante deve sair com credibilidade suficiente para entrar em contato -- o site precisa transmitir autoridade e facilitar o contato.
-**Current focus:** Phase 2 in progress. Plan 2 of 3 complete.
+**Current focus:** Phase 2 complete. Ready for Phase 3 (Admin Panel).
 
 ## Current Position
 
-Phase: 2 of 4 (Public Site) -- In Progress
-Plan: 2 of 3 in current phase (02-01, 02-02 done)
-Status: Plan complete, next: 02-03
-Last activity: 2026-03-11 -- Completed 02-02 homepage sections plan (2 min)
+Phase: 2 of 4 (Public Site) -- Complete
+Plan: 3 of 3 in current phase (02-01, 02-02, 02-03 done)
+Status: Phase complete, next: Phase 3 (Admin Panel)
+Last activity: 2026-03-11 -- Completed 02-03 contact form + legal pages plan (2 min)
 
-Progress: [████████░░] 80%
+Progress: [██████████] 100%
 
 ## Performance Metrics
 
@@ -53,6 +53,7 @@ Progress: [████████░░] 80%
 | Phase 01 P02 | 3min | 3 tasks | 11 files |
 | Phase 02-public-site P01 | 12min | 3 tasks | 9 files |
 | Phase 02-public-site P02 | 2min | 2 tasks | 5 files |
+| Phase 02-public-site P03 | 2min | 2 tasks | 5 files |
 
 ## Accumulated Context
 
@@ -78,6 +79,10 @@ Recent decisions affecting current work:
 - [Phase 02-02]: HeroSection uses animate (not whileInView) — hero is above the fold on load
 - [Phase 02-02]: ServicesSection uses Briefcase as default icon — dynamic icon lookup deferred
 - [Phase 02-02]: Prisma select with no Date fields in page.tsx — serialization safety for Promise.all fetches
+- [Phase 02-03]: Honeypot uses sr-only not display:none -- bots skip display:none, making sr-only more effective
+- [Phase 02-03]: Honeypot failure silently returns success:true -- bots must not detect submission was discarded
+- [Phase 02-03]: Legal pages use Server Components with COMPANY constants -- never hardcode CNPJ/email inline
+- [Phase 02-03]: ContactSection is Client Component solely to enable useActionState -- server action in separate "use server" file
 
 ### Pending Todos
 
@@ -85,12 +90,12 @@ None yet.
 
 ### Blockers/Concerns
 
-- CNPJ pendente: Legal pages (SITE-09, SITE-10) will use placeholders until the real CNPJ is provided
 - Clerk v7 validated: proxy.ts compiles and builds successfully with clerkMiddleware. Build output confirms "Proxy (Middleware)" recognition. No fallback needed.
 - Docker not available in execution environment: `prisma db push` deferred. Run `docker compose up -d && pnpm prisma db push` when Docker is available.
+- Pre-existing Turbopack build failure: Next.js detects /home/sth/package-lock.json as workspace root instead of project's pnpm-lock.yaml, causing @prisma/client/runtime module resolution to fail. Fix in Phase 04 (set turbopack.root in next.config.ts or remove orphaned lockfile). See deferred-items.md in 02-public-site.
 
 ## Session Continuity
 
-Last session: 2026-03-11T20:11:01.762Z
-Stopped at: Completed 02-02-PLAN.md
+Last session: 2026-03-11T20:15:21Z
+Stopped at: Completed 02-03-PLAN.md
 Resume file: None
