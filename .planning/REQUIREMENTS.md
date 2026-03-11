@@ -35,8 +35,8 @@
 - [x] **ADMIN-02**: Dashboard admin com resumo: total de servicos, depoimentos, posts, contatos nao lidos
 - [x] **ADMIN-03**: CRUD completo de Servicos -- criar, editar, remover servicos com upload de imagem via Cloudinary
 - [x] **ADMIN-04**: CRUD completo de Depoimentos -- criar, editar, remover depoimentos com foto do cliente via Cloudinary
-- [ ] **ADMIN-05**: CRUD completo de Posts de Blog -- criar, editar, rascunho/publicado, sem pagina publica em v1
-- [ ] **ADMIN-06**: Visualizador de Contatos -- lista de mensagens do formulario, marcar como lido/nao lido, ver detalhes
+- [x] **ADMIN-05**: CRUD completo de Posts de Blog -- criar, editar, rascunho/publicado, sem pagina publica em v1
+- [x] **ADMIN-06**: Visualizador de Contatos -- lista de mensagens do formulario, marcar como lido/nao lido, ver detalhes
 
 ### Deploy & Infrastructure
 
@@ -105,8 +105,8 @@
 | ADMIN-02 | Phase 3 | Complete |
 | ADMIN-03 | Phase 3 | Complete |
 | ADMIN-04 | Phase 3 | Complete |
-| ADMIN-05 | Phase 3 | Pending |
-| ADMIN-06 | Phase 3 | Pending |
+| ADMIN-05 | Phase 3 | Complete |
+| ADMIN-06 | Phase 3 | Complete |
 | DEPLOY-01 | Phase 4 | Pending |
 | DEPLOY-02 | Phase 4 | Pending |
 | DEPLOY-03 | Phase 4 | Pending |

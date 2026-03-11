@@ -2,16 +2,16 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: in-progress
-stopped_at: Completed 03-01-PLAN.md
-last_updated: "2026-03-11T20:36:37.327Z"
-last_activity: 2026-03-11 -- Completed 03-01 admin foundation (Cloudinary, layout, Services + Testimonials CRUD) (18 min)
+status: completed
+stopped_at: Completed 03-02-PLAN.md
+last_updated: "2026-03-11T20:44:12.243Z"
+last_activity: 2026-03-11 -- Completed 03-01 admin foundation (Cloudinary, layout, Services CRUD, Testimonials CRUD) (18 min)
 progress:
   total_phases: 4
-  completed_phases: 2
+  completed_phases: 3
   total_plans: 7
-  completed_plans: 6
-  percent: 100
+  completed_plans: 7
+  percent: 86
 ---
 
 # Project State
@@ -55,6 +55,7 @@ Progress: [█████████░] 86%
 | Phase 02-public-site P02 | 2min | 2 tasks | 5 files |
 | Phase 02-public-site P03 | 2min | 2 tasks | 5 files |
 | Phase 03-admin-panel P01 | 18min | 3 tasks | 16 files |
+| Phase 03-admin-panel P02 | 3 | 2 tasks | 7 files |
 
 ## Accumulated Context
 
@@ -87,6 +88,9 @@ Recent decisions affecting current work:
 - [Phase 03-admin-panel]: Admin layout uses 'use client' at module level — usePathname requires client context, acceptable for protected admin area
 - [Phase 03-admin-panel]: Edit pages split into Server page + Client form component — page fetches data (server), form handles useActionState (client)
 - [Phase 03-admin-panel]: Explicit row type interfaces needed for Prisma 7 findMany results — strict mode triggers TS7006 on map callbacks without annotation
+- [Phase 03-admin-panel]: publishedAt set only on first publish — re-saving already-published post preserves original date
+- [Phase 03-admin-panel]: Contacts page is pure Server Component — toggleContactRead.bind used as form action, no client boundary needed
+- [Phase 03-admin-panel]: React.Fragment with key used for map() producing multiple sibling rows — short fragment syntax does not accept key prop
 
 ### Pending Todos
 
@@ -100,6 +104,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-11T20:36:37.325Z
-Stopped at: Completed 03-01-PLAN.md
+Last session: 2026-03-11T20:44:12.240Z
+Stopped at: Completed 03-02-PLAN.md
 Resume file: None
