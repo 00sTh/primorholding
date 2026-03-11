@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400 900;
+  font-display: swap;
+  src: url("https://fonts.gstatic.com/s/playfairdisplay/v37/nuFiD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_qiTXtfA.woff2")
+    format("woff2");
+}
+
+:root {
+  --navy-dark: #0A1628;
+  --navy: #0F2443;
+  --navy-light: #1A3A66;
+  --gold: #C9A227;
+  --gold-light: #D4B84A;
+  --cream: #FBF8F1;
+  --white: #FFFFFF;
+  --slate: #94A3B8;
+  --border-gold: rgba(201, 162, 39, 0.2);
+}
+
+@theme inline {
+  --color-background: var(--navy-dark);
+  --color-foreground: var(--cream);
+  --color-navy-dark: var(--navy-dark);
+  --color-navy: var(--navy);
+  --color-navy-light: var(--navy-light);
+  --color-gold: var(--gold);
+  --color-gold-light: var(--gold-light);
+  --color-cream: var(--cream);
+  --color-slate: var(--slate);
+  --font-sans: "Geist Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+}
+
+body {
+  background-color: var(--navy-dark);
+  color: var(--cream);
+  font-family: "Geist Sans", ui-sans-serif, system-ui, sans-serif;
+}
+
+.font-serif {
+  font-family: "Playfair Display", Georgia, serif;
+}
+
+.text-gradient-gold {
+  background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gold-glow {
+  box-shadow: 0 0 20px rgba(201, 162, 39, 0.15),
+    0 0 60px rgba(201, 162, 39, 0.05);
+}
+
+::selection {
+  background-color: rgba(201, 162, 39, 0.3);
+  color: var(--cream);
+}
