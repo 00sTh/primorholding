@@ -31,10 +31,10 @@
 
 ### Admin Panel
 
-- [ ] **ADMIN-01**: Pagina de sign-in admin (`/admin/sign-in`) via Clerk, com redirect para dashboard apos login
-- [ ] **ADMIN-02**: Dashboard admin com resumo: total de servicos, depoimentos, posts, contatos nao lidos
-- [ ] **ADMIN-03**: CRUD completo de Servicos -- criar, editar, remover servicos com upload de imagem via Cloudinary
-- [ ] **ADMIN-04**: CRUD completo de Depoimentos -- criar, editar, remover depoimentos com foto do cliente via Cloudinary
+- [x] **ADMIN-01**: Pagina de sign-in admin (`/admin/sign-in`) via Clerk, com redirect para dashboard apos login
+- [x] **ADMIN-02**: Dashboard admin com resumo: total de servicos, depoimentos, posts, contatos nao lidos
+- [x] **ADMIN-03**: CRUD completo de Servicos -- criar, editar, remover servicos com upload de imagem via Cloudinary
+- [x] **ADMIN-04**: CRUD completo de Depoimentos -- criar, editar, remover depoimentos com foto do cliente via Cloudinary
 - [ ] **ADMIN-05**: CRUD completo de Posts de Blog -- criar, editar, rascunho/publicado, sem pagina publica em v1
 - [ ] **ADMIN-06**: Visualizador de Contatos -- lista de mensagens do formulario, marcar como lido/nao lido, ver detalhes
 
@@ -101,10 +101,10 @@
 | SITE-10 | Phase 2 | Complete |
 | SITE-11 | Phase 2 | Complete |
 | SITE-12 | Phase 2 | Complete |
-| ADMIN-01 | Phase 3 | Pending |
-| ADMIN-02 | Phase 3 | Pending |
-| ADMIN-03 | Phase 3 | Pending |
-| ADMIN-04 | Phase 3 | Pending |
+| ADMIN-01 | Phase 3 | Complete |
+| ADMIN-02 | Phase 3 | Complete |
+| ADMIN-03 | Phase 3 | Complete |
+| ADMIN-04 | Phase 3 | Complete |
 | ADMIN-05 | Phase 3 | Pending |
 | ADMIN-06 | Phase 3 | Pending |
 | DEPLOY-01 | Phase 4 | Pending |

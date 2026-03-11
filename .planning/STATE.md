@@ -2,15 +2,15 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: completed
-stopped_at: Completed 02-03-PLAN.md
-last_updated: "2026-03-11T20:20:17.814Z"
-last_activity: 2026-03-11 -- Completed 02-03 contact form + legal pages plan (2 min)
+status: in-progress
+stopped_at: Completed 03-01-PLAN.md
+last_updated: "2026-03-11T20:36:37.327Z"
+last_activity: 2026-03-11 -- Completed 03-01 admin foundation (Cloudinary, layout, Services + Testimonials CRUD) (18 min)
 progress:
   total_phases: 4
   completed_phases: 2
-  total_plans: 5
-  completed_plans: 5
+  total_plans: 7
+  completed_plans: 6
   percent: 100
 ---
 
@@ -21,16 +21,16 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-11)
 
 **Core value:** O visitante deve sair com credibilidade suficiente para entrar em contato -- o site precisa transmitir autoridade e facilitar o contato.
-**Current focus:** Phase 2 complete. Ready for Phase 3 (Admin Panel).
+**Current focus:** Phase 3 in progress. 03-01 complete, next: 03-02 (Blog + Contacts admin).
 
 ## Current Position
 
-Phase: 2 of 4 (Public Site) -- Complete
-Plan: 3 of 3 in current phase (02-01, 02-02, 02-03 done)
-Status: Phase complete, next: Phase 3 (Admin Panel)
-Last activity: 2026-03-11 -- Completed 02-03 contact form + legal pages plan (2 min)
+Phase: 3 of 4 (Admin Panel) -- In Progress
+Plan: 1 of 2 in current phase (03-01 done)
+Status: Plan 03-01 complete, next: Plan 03-02 (Blog + Contacts admin)
+Last activity: 2026-03-11 -- Completed 03-01 admin foundation (Cloudinary, layout, Services CRUD, Testimonials CRUD) (18 min)
 
-Progress: [██████████] 100%
+Progress: [█████████░] 86%
 
 ## Performance Metrics
 
@@ -54,6 +54,7 @@ Progress: [██████████] 100%
 | Phase 02-public-site P01 | 12min | 3 tasks | 9 files |
 | Phase 02-public-site P02 | 2min | 2 tasks | 5 files |
 | Phase 02-public-site P03 | 2min | 2 tasks | 5 files |
+| Phase 03-admin-panel P01 | 18min | 3 tasks | 16 files |
 
 ## Accumulated Context
 
@@ -83,6 +84,9 @@ Recent decisions affecting current work:
 - [Phase 02-03]: Honeypot failure silently returns success:true -- bots must not detect submission was discarded
 - [Phase 02-03]: Legal pages use Server Components with COMPANY constants -- never hardcode CNPJ/email inline
 - [Phase 02-03]: ContactSection is Client Component solely to enable useActionState -- server action in separate "use server" file
+- [Phase 03-admin-panel]: Admin layout uses 'use client' at module level — usePathname requires client context, acceptable for protected admin area
+- [Phase 03-admin-panel]: Edit pages split into Server page + Client form component — page fetches data (server), form handles useActionState (client)
+- [Phase 03-admin-panel]: Explicit row type interfaces needed for Prisma 7 findMany results — strict mode triggers TS7006 on map callbacks without annotation
 
 ### Pending Todos
 
@@ -96,6 +100,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-11T20:15:21Z
-Stopped at: Completed 02-03-PLAN.md
+Last session: 2026-03-11T20:36:37.325Z
+Stopped at: Completed 03-01-PLAN.md
 Resume file: None
