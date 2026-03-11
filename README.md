@@ -1,36 +1,103 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Primor Holding — Site Institucional
 
-## Getting Started
+Site institucional da **PRIMOR PARTNERSHIP HOLDING LTDA** (CNPJ 59.120.382/0001-30), consultoria empresarial liderada por Joao Antonio Lopes Correa.
 
-First, run the development server:
+## Stack
+
+- **Framework:** Next.js 16 (App Router) + TypeScript
+- **Estilo:** Tailwind CSS v4 (CSS-first, sem tailwind.config.js)
+- **Banco de dados:** PostgreSQL via Neon (prod) / Docker (dev) + Prisma 7
+- **Autenticacao:** Clerk v7 (apenas area admin)
+- **Upload de imagens:** Cloudinary
+- **Animacoes:** framer-motion
+- **Deploy:** Vercel
+
+## Funcionalidades
+
+- Pagina inicial com secoes Hero, Sobre, Servicos, Depoimentos e Contato
+- Formulario de contato com honeypot anti-spam
+- Botao flutuante de WhatsApp
+- Banner de consentimento de cookies (LGPD)
+- Paginas legais: Politica de Privacidade e Termos de Uso
+- Painel admin (protegido por Clerk): CRUD de servicos, depoimentos, posts de blog, visualizador de contatos
+- SEO completo: meta tags, OpenGraph, sitemap.xml, robots.txt
+
+## Configuracao Local
+
+### Pre-requisitos
+
+- Node.js 20+ (recomendado via [nvm](https://github.com/nvm-sh/nvm))
+- pnpm: `npm install -g pnpm`
+- Docker Desktop (para o PostgreSQL local)
+
+### Instalacao
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+# 1. Clone o repositorio
+git clone https://github.com/00sTh/primorholding.git
+cd primorholding
+
+# 2. Instale as dependencias
+pnpm install
+
+# 3. Copie o arquivo de variaveis de ambiente
+cp .env.example .env.local
+# Preencha os valores em .env.local
+
+# 4. Suba o banco de dados local
+docker compose up -d
+
+# 5. Aplique o schema ao banco
+pnpm db:push
+
+# 6. Popule com dados iniciais
+pnpm db:seed
+
+# 7. Inicie o servidor de desenvolvimento
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Acesse [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Variaveis de Ambiente
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Copie `.env.example` para `.env.local` e preencha:
 
-## Learn More
+| Variavel | Descricao |
+|----------|-----------|
+| `DATABASE_URL` | URL do banco de dados PostgreSQL (pooled para Neon) |
+| `DIRECT_URL` | URL direta do banco (sem pooler, para migrations) |
+| `NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY` | Chave publica do Clerk |
+| `CLERK_SECRET_KEY` | Chave secreta do Clerk |
+| `NEXT_PUBLIC_CLERK_SIGN_IN_URL` | `/sign-in` |
+| `NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL` | `/admin` |
+| `CLOUDINARY_CLOUD_NAME` | Nome do cloud no Cloudinary |
+| `CLOUDINARY_API_KEY` | API Key do Cloudinary |
+| `CLOUDINARY_API_SECRET` | API Secret do Cloudinary |
+| `NEXT_PUBLIC_SITE_URL` | URL do site em producao (ex: `https://primorholding.vercel.app`) |
 
-To learn more about Next.js, take a look at the following resources:
+## Deploy no Vercel
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Faca push para o GitHub (`git push origin main`)
+2. Importe o repositorio no [Vercel](https://vercel.com/new)
+3. Configure todas as variaveis de ambiente no painel Vercel (Settings -> Environment Variables)
+4. Deploy sera feito automaticamente a cada push para `main`
+5. Apos o primeiro deploy, execute o seed no banco de producao:
+   ```bash
+   DIRECT_URL="<sua-neon-direct-url>" DATABASE_URL="<neon-pooled-url>" pnpm db:seed
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Comandos Uteis
 
-## Deploy on Vercel
+```bash
+pnpm dev          # Servidor de desenvolvimento
+pnpm build        # Build de producao
+pnpm type-check   # Verificacao de tipos TypeScript
+pnpm db:push      # Aplica schema ao banco
+pnpm db:seed      # Popula banco com dados iniciais
+pnpm db:studio    # Abre Prisma Studio (UI do banco)
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Licenca
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Projeto proprietario — PRIMOR PARTNERSHIP HOLDING LTDA. Todos os direitos reservados.
