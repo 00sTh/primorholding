@@ -1,82 +1,87 @@
 import Link from "next/link";
-import { ArrowRight, ChevronDown } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 export default function HeroSection() {
   return (
-    <section className="hero-gradient relative min-h-screen flex items-center overflow-hidden">
-      {/* Decorative gold orbs */}
+    <section className="hero-gradient relative min-h-screen flex flex-col justify-end overflow-hidden">
+      {/* Giant background PRIMOR text */}
       <div
         aria-hidden
-        className="absolute top-1/4 right-1/4 w-[500px] h-[500px] rounded-full pointer-events-none"
-        style={{
-          background: "radial-gradient(circle, rgba(201,169,110,0.06) 0%, transparent 70%)",
-          filter: "blur(40px)",
-        }}
-      />
+        className="absolute inset-0 flex items-center justify-center pointer-events-none select-none overflow-hidden"
+      >
+        <span
+          className="font-serif font-bold leading-none whitespace-nowrap"
+          style={{
+            fontSize: "clamp(10rem, 28vw, 22rem)",
+            color: "transparent",
+            WebkitTextStroke: "1px rgba(201,169,110,0.06)",
+            letterSpacing: "-0.02em",
+            transform: "translateY(10%)",
+          }}
+        >
+          PRIMOR
+        </span>
+      </div>
+
+      {/* Subtle gold glow right */}
       <div
         aria-hidden
-        className="absolute bottom-1/4 left-1/6 w-[300px] h-[300px] rounded-full pointer-events-none"
+        className="absolute right-0 top-1/2 -translate-y-1/2 w-[600px] h-[600px] pointer-events-none"
         style={{
-          background: "radial-gradient(circle, rgba(201,169,110,0.04) 0%, transparent 70%)",
-          filter: "blur(30px)",
+          background: "radial-gradient(circle at 80% 50%, rgba(201,169,110,0.07) 0%, transparent 60%)",
         }}
       />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 w-full">
-        <div className="max-w-3xl">
-          {/* Eyebrow */}
-          <div className="section-eyebrow mb-8">
-            <span className="gold-line" />
+      {/* Vertical est. label on right */}
+      <div className="absolute right-8 top-1/2 -translate-y-1/2 hidden lg:flex flex-col items-center gap-3 opacity-30">
+        <div className="w-px h-16 bg-[#C9A96E]" />
+        <span
+          className="text-[#C9A96E] text-[0.6rem] font-semibold tracking-[0.35em] uppercase"
+          style={{ writingMode: "vertical-rl" }}
+        >
+          Est. 2010
+        </span>
+        <div className="w-px h-16 bg-[#C9A96E]" />
+      </div>
+
+      {/* Main content — pinned to bottom */}
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20 pt-48 w-full">
+        {/* Tag */}
+        <div className="flex items-center gap-3 mb-8">
+          <span className="inline-block w-2 h-2 rounded-full bg-[#C9A96E]" />
+          <span className="text-[#C9A96E] text-xs font-semibold tracking-[0.25em] uppercase">
             Consultoria &amp; Holding Empresarial
-            <span className="gold-line" />
-          </div>
+          </span>
+        </div>
 
-          {/* Headline */}
-          <h1 className="font-serif text-[clamp(3rem,7vw,5.5rem)] font-bold leading-[1.05] text-[#F0EBE1] mb-6">
-            <span className="text-gradient-gold">Excelência</span>
-            <br />
-            em Gestão
-            <br />
-            Empresarial
-          </h1>
+        {/* Headline — editorial scale */}
+        <h1
+          className="font-serif font-bold text-[#F0EBE1] leading-[0.95] mb-10"
+          style={{ fontSize: "clamp(3.5rem, 9vw, 7.5rem)" }}
+        >
+          Solidez.
+          <br />
+          <em className="not-italic text-gradient-gold">Estratégia.</em>
+          <br />
+          Crescimento.
+        </h1>
 
-          {/* Subtitle */}
-          <p className="text-[#8B8075] text-lg leading-relaxed mb-10 max-w-xl">
-            Estratégia, solidez e visão de longo prazo. A Primor Holding transforma
-            desafios em oportunidades de crescimento sustentável para o seu negócio.
+        {/* Bottom bar */}
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 pt-8 border-t border-[rgba(201,169,110,0.12)]">
+          <p className="text-[#8B8A9A] text-base leading-relaxed max-w-md">
+            Transformamos desafios empresariais em oportunidades de crescimento
+            sustentável — com rigor analítico e visão de longo prazo.
           </p>
-
-          {/* CTAs */}
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex flex-col sm:flex-row gap-3 flex-shrink-0">
             <Link href="/contato" className="btn-gold">
-              Fale Conosco
+              Agendar Reunião
               <ArrowRight className="w-4 h-4" />
             </Link>
             <Link href="/solucoes" className="btn-outline-gold">
-              Conheça as Soluções
+              Nossas Soluções
             </Link>
           </div>
-
-          {/* Trust indicators */}
-          <div className="flex items-center gap-8 mt-12 pt-12 border-t border-[rgba(255,255,255,0.06)]">
-            {[
-              { value: "15+", label: "Anos de experiência" },
-              { value: "80+", label: "Clientes atendidos" },
-              { value: "5", label: "Empresas no portfólio" },
-            ].map((stat) => (
-              <div key={stat.value} className="text-center">
-                <p className="font-serif text-2xl font-bold text-[#C9A96E]">{stat.value}</p>
-                <p className="text-[#8B8075] text-xs mt-0.5 whitespace-nowrap">{stat.label}</p>
-              </div>
-            ))}
-          </div>
         </div>
-      </div>
-
-      {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-40">
-        <span className="text-[#8B8075] text-xs tracking-widest uppercase">Rolar</span>
-        <ChevronDown className="w-4 h-4 text-[#8B8075] animate-bounce" />
       </div>
     </section>
   );

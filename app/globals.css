@@ -1,16 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap');
 @import "tailwindcss";
 
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 30s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
 @layer base {
   :root {
-    --color-bg: #09090F;
-    --color-bg-card: #0F0F1A;
-    --color-bg-section: #0C0C16;
+    --color-bg: #050A18;
+    --color-bg-card: #0A1020;
+    --color-bg-section: #080C1A;
     --color-gold: #C9A96E;
     --color-gold-dim: #A8885A;
     --color-gold-light: #E8D5A3;
     --color-text: #F0EBE1;
-    --color-muted: #8B8075;
+    --color-muted: #8B8A9A;
     --color-border: rgba(201, 169, 110, 0.12);
     --color-border-subtle: rgba(255, 255, 255, 0.06);
   }
@@ -128,16 +148,18 @@
 
 /* ── Backgrounds ── */
 .hero-gradient {
-  background-color: #09090F;
+  background-color: #050A18;
   background-image:
-    radial-gradient(ellipse 70% 50% at 75% 35%, rgba(201, 169, 110, 0.07) 0%, transparent 65%),
-    radial-gradient(ellipse 40% 60% at 10% 80%, rgba(201, 169, 110, 0.04) 0%, transparent 60%),
-    radial-gradient(rgba(255, 255, 255, 0.022) 1px, transparent 1px);
-  background-size: auto, auto, 28px 28px;
+    radial-gradient(ellipse 60% 70% at 80% 30%, rgba(201, 169, 110, 0.055) 0%, transparent 65%),
+    radial-gradient(ellipse 50% 50% at 15% 85%, rgba(201, 169, 110, 0.03) 0%, transparent 60%);
 }
 
 .section-alt {
-  background-color: #0C0C16;
+  background-color: #080C1A;
+}
+
+.section-cream {
+  background-color: #F5F0E8;
 }
 
 /* ── Cards ── */
@@ -158,15 +180,61 @@
 }
 
 .card-dark {
-  background: #0F0F1A;
+  background: #0A1020;
   border: 1px solid rgba(255, 255, 255, 0.06);
   border-radius: 0.75rem;
   transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
 }
 .card-dark:hover {
   border-color: rgba(201, 169, 110, 0.22);
-  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.40);
-  transform: translateY(-2px);
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.50);
+  transform: translateY(-3px);
+}
+
+/* Service row (numbered editorial) */
+.service-row {
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+  padding: 2.5rem 0;
+  display: grid;
+  grid-template-columns: 3rem 1fr auto;
+  gap: 2rem;
+  align-items: start;
+  transition: border-color 0.3s ease;
+  cursor: default;
+}
+.service-row:hover {
+  border-color: rgba(201, 169, 110, 0.25);
+}
+.service-row:hover .service-row-title {
+  color: #C9A96E;
+}
+.service-row-title {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 600;
+  color: #F0EBE1;
+  line-height: 1.2;
+  transition: color 0.3s ease;
+}
+
+/* Testimonial card */
+.testimonial-card {
+  background: linear-gradient(135deg, rgba(201,169,110,0.04) 0%, rgba(10,16,32,0.8) 100%);
+  border: 1px solid rgba(201, 169, 110, 0.12);
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+/* Large decorative number */
+.deco-number {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(6rem, 15vw, 12rem);
+  font-weight: 700;
+  line-height: 1;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(201, 169, 110, 0.15);
+  pointer-events: none;
+  user-select: none;
 }
 
 /* ── Typography ── */
