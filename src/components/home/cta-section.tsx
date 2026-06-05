@@ -3,7 +3,7 @@ import { ArrowRight, Phone } from "lucide-react";
 
 export default function CTASection() {
   return (
-    <section className="relative overflow-hidden" style={{ background: "#080C1A" }}>
+    <section className="relative overflow-hidden" style={{ background: "#F5F0E8" }}>
       {/* Gold border top */}
       <div className="h-px bg-gradient-to-r from-transparent via-[rgba(201,169,110,0.4)] to-transparent" />
 
@@ -16,14 +16,14 @@ export default function CTASection() {
               Próximo Passo
             </div>
             <h2
-              className="font-serif font-bold text-[#F0EBE1] leading-[1.05] mb-6"
+              className="font-serif font-bold text-[#1C1510] leading-[1.05] mb-6"
               style={{ fontSize: "clamp(2.5rem, 5.5vw, 4.5rem)" }}
             >
               Vamos construir
               <br />
               <span className="text-gradient-gold">algo juntos?</span>
             </h2>
-            <p className="text-[#8B8A9A] leading-relaxed max-w-md">
+            <p className="text-[#6B6057] leading-relaxed max-w-md">
               Primeira conversa sem compromisso. Nossa equipe está pronta para
               entender seu desafio e propor o caminho mais direto ao crescimento.
             </p>
@@ -41,7 +41,7 @@ export default function CTASection() {
                 "Proposta personalizada em 48h",
                 "Sem burocracia — direto ao ponto",
               ].map((item) => (
-                <div key={item} className="flex items-center gap-3 text-sm text-[#F0EBE1]">
+                <div key={item} className="flex items-center gap-3 text-sm text-[#1C1510]">
                   <div className="w-1.5 h-1.5 rounded-full bg-[#C9A96E] flex-shrink-0" />
                   {item}
                 </div>

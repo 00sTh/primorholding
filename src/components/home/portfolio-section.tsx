@@ -37,10 +37,10 @@ export default function PortfolioSection() {
                 </span>
               </div>
               <div>
-                <h3 className="font-semibold text-[#F0EBE1] mb-1 group-hover:text-[#C9A96E] transition-colors">
+                <h3 className="font-semibold text-[#1C1510] mb-1 group-hover:text-[#C9A96E] transition-colors">
                   {empresa.nome}
                 </h3>
-                <span className="inline-block px-2.5 py-1 text-xs font-medium text-[#8B8075] bg-[rgba(255,255,255,0.04)] border border-[rgba(255,255,255,0.07)] rounded-full">
+                <span className="inline-block px-2.5 py-1 text-xs font-medium text-[#6B6057] bg-[rgba(0,0,0,0.04)] border border-[rgba(0,0,0,0.07)] rounded-full">
                   {empresa.setor}
                 </span>
               </div>
@@ -53,7 +53,7 @@ export default function PortfolioSection() {
               <span className="text-[#C9A96E] text-2xl">+</span>
             </div>
             <div>
-              <h3 className="font-semibold text-[#8B8075] mb-1">Sua Empresa</h3>
+              <h3 className="font-semibold text-[#6B6057] mb-1">Sua Empresa</h3>
               <p className="text-[#5C5555] text-xs">Venha fazer parte do grupo</p>
             </div>
           </div>

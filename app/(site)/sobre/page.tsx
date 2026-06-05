@@ -38,7 +38,7 @@ export default function SobrePage() {
               <br />
               <span className="text-gradient-gold">ao longo do tempo</span>
             </h1>
-            <p className="text-[#8B8075] text-lg leading-relaxed">
+            <p className="text-[#6B6057] text-lg leading-relaxed">
               A Primor Holding é mais do que um grupo empresarial. É o resultado de
               décadas de trabalho dedicado à criação de valor real e duradouro.
             </p>
@@ -54,8 +54,8 @@ export default function SobrePage() {
               <div className="w-10 h-10 rounded-lg bg-[rgba(201,169,110,0.08)] border border-[rgba(201,169,110,0.2)] flex items-center justify-center mb-5">
                 <Target className="w-5 h-5 text-[#C9A96E]" />
               </div>
-              <h3 className="font-serif text-xl font-semibold text-[#F0EBE1] mb-3">Missão</h3>
-              <p className="text-[#8B8075] text-sm leading-relaxed">
+              <h3 className="font-serif text-xl font-semibold text-[#1C1510] mb-3">Missão</h3>
+              <p className="text-[#6B6057] text-sm leading-relaxed">
                 Promover o crescimento sustentável de empresas e empreendedores por meio
                 de consultoria estratégica de alto padrão, gestão eficiente e parcerias
                 de valor.
@@ -65,8 +65,8 @@ export default function SobrePage() {
               <div className="w-10 h-10 rounded-lg bg-[rgba(201,169,110,0.15)] border border-[rgba(201,169,110,0.3)] flex items-center justify-center mb-5">
                 <Eye className="w-5 h-5 text-[#C9A96E]" />
               </div>
-              <h3 className="font-serif text-xl font-semibold text-[#F0EBE1] mb-3">Visão</h3>
-              <p className="text-[#8B8075] text-sm leading-relaxed">
+              <h3 className="font-serif text-xl font-semibold text-[#1C1510] mb-3">Visão</h3>
+              <p className="text-[#6B6057] text-sm leading-relaxed">
                 Ser reconhecida como a holding de consultoria mais admirada do Brasil,
                 referência em ética, excelência e geração de valor para todas as partes
                 envolvidas.
@@ -76,11 +76,11 @@ export default function SobrePage() {
               <div className="w-10 h-10 rounded-lg bg-[rgba(201,169,110,0.08)] border border-[rgba(201,169,110,0.2)] flex items-center justify-center mb-5">
                 <Heart className="w-5 h-5 text-[#C9A96E]" />
               </div>
-              <h3 className="font-serif text-xl font-semibold text-[#F0EBE1] mb-3">Valores</h3>
+              <h3 className="font-serif text-xl font-semibold text-[#1C1510] mb-3">Valores</h3>
               <ul className="space-y-2.5">
                 {["Integridade", "Excelência", "Inovação", "Comprometimento", "Parceria"].map(
                   (v) => (
-                    <li key={v} className="flex items-center gap-2.5 text-sm text-[#8B8075]">
+                    <li key={v} className="flex items-center gap-2.5 text-sm text-[#6B6057]">
                       <Check className="w-3.5 h-3.5 text-[#C9A96E] flex-shrink-0" />
                       {v}
                     </li>
@@ -118,8 +118,8 @@ export default function SobrePage() {
                     <div className="w-3 h-3 rounded-full bg-[#C9A96E] border-2 border-[#09090F] mt-1.5 relative z-10" />
                   </div>
                   <div className="card-dark p-5 flex-1">
-                    <h4 className="font-semibold text-[#F0EBE1] mb-1">{item.titulo}</h4>
-                    <p className="text-[#8B8075] text-sm">{item.desc}</p>
+                    <h4 className="font-semibold text-[#1C1510] mb-1">{item.titulo}</h4>
+                    <p className="text-[#6B6057] text-sm">{item.desc}</p>
                   </div>
                 </div>
               ))}

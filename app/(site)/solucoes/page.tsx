@@ -79,7 +79,7 @@ export default function SolucoesPage() {
               <br />
               <span className="text-gradient-gold">fase do negócio</span>
             </h1>
-            <p className="text-[#8B8075] text-lg leading-relaxed">
+            <p className="text-[#6B6057] text-lg leading-relaxed">
               Da estratégia à execução, da reestruturação ao crescimento — a Primor
               Holding oferece expertise especializada em cada etapa da jornada empresarial.
             </p>
@@ -102,8 +102,8 @@ export default function SolucoesPage() {
                 <div className="w-14 h-14 rounded-xl bg-[rgba(201,169,110,0.08)] border border-[rgba(201,169,110,0.15)] flex items-center justify-center mb-6">
                   <Icon className="w-6 h-6 text-[#C9A96E]" />
                 </div>
-                <h2 className="font-serif text-2xl font-bold text-[#F0EBE1] mb-4">{titulo}</h2>
-                <p className="text-[#8B8075] leading-relaxed mb-6">{desc}</p>
+                <h2 className="font-serif text-2xl font-bold text-[#1C1510] mb-4">{titulo}</h2>
+                <p className="text-[#6B6057] leading-relaxed mb-6">{desc}</p>
                 <Link
                   href="/contato"
                   className="inline-flex items-center gap-2 text-[#C9A96E] text-sm font-semibold hover:gap-3 transition-all"
@@ -120,7 +120,7 @@ export default function SolucoesPage() {
                   </h4>
                   <ul className="space-y-3">
                     {beneficios.map((b) => (
-                      <li key={b} className="flex items-center gap-3 text-sm text-[#F0EBE1]">
+                      <li key={b} className="flex items-center gap-3 text-sm text-[#1C1510]">
                         <div className="w-5 h-5 rounded-full bg-[rgba(201,169,110,0.12)] flex items-center justify-center flex-shrink-0">
                           <Check className="w-3 h-3 text-[#C9A96E]" />
                         </div>

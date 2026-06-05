@@ -21,7 +21,7 @@ export default function MarqueeSection() {
             className="inline-flex items-center gap-5 px-6 whitespace-nowrap"
           >
             <span className="w-1.5 h-1.5 rounded-full bg-[#C9A96E] flex-shrink-0 opacity-60" />
-            <span className="text-[#8B8A9A] text-xs font-medium tracking-[0.18em] uppercase">
+            <span className="text-[#6B6057] text-xs font-medium tracking-[0.18em] uppercase">
               {item}
             </span>
           </span>

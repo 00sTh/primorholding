@@ -1,32 +1,28 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import HeroBackgroundMedia from "./hero-background-media";
 
 export default function HeroSection() {
   return (
     <section className="hero-gradient relative min-h-screen flex flex-col justify-end overflow-hidden">
-      {/* Background video — CC0 corporate B-roll, autoplay muted loop */}
-      <div
-        aria-hidden
-        className="absolute inset-0 overflow-hidden pointer-events-none"
-      >
-        <iframe
-          src="https://www.youtube-nocookie.com/embed/AHJVDFop9sU?autoplay=1&mute=1&loop=1&playlist=AHJVDFop9sU&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1&iv_load_policy=3&disablekb=1&fs=0"
-          title="Primor Holding"
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[177.78vh] min-w-full h-[56.25vw] min-h-full"
-          allow="autoplay; encrypted-media; picture-in-picture"
-          loading="eager"
-        />
-      </div>
+      <HeroBackgroundMedia />
 
-      {/* Cream wash overlay — preserves readability */}
+      {/* Cream wash overlay — preserves readability without killing the video */}
       <div
         aria-hidden
         className="absolute inset-0 pointer-events-none"
-        style={{ backgroundColor: "rgba(250,250,247,0.72)" }}
+        style={{
+          background:
+            "linear-gradient(180deg, rgba(250,250,247,0.42) 0%, rgba(250,250,247,0.58) 55%, rgba(250,250,247,0.88) 100%)",
+        }}
       />
       <div
         aria-hidden
-        className="absolute inset-0 hero-gradient pointer-events-none"
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          backgroundImage:
+            "radial-gradient(ellipse 60% 70% at 80% 30%, rgba(201,169,110,0.09) 0%, transparent 65%), radial-gradient(ellipse 50% 50% at 15% 85%, rgba(201,169,110,0.05) 0%, transparent 60%)",
+        }}
       />
 
       {/* Giant background PRIMOR text */}
@@ -70,9 +66,25 @@ export default function HeroSection() {
       </div>
 
       {/* Main content — pinned to bottom */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20 pt-48 w-full">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 md:pb-20 pt-40 md:pt-52 w-full">
+        {/* Brand lockup */}
+        <div className="mb-8 md:mb-10">
+          <p
+            className="font-serif font-bold uppercase text-[#1C1510] leading-[0.82]"
+            style={{ fontSize: "clamp(4.5rem, 14vw, 11rem)" }}
+          >
+            Primor
+          </p>
+          <p
+            className="font-serif font-semibold uppercase text-[#C9A96E] leading-none"
+            style={{ fontSize: "clamp(2rem, 5vw, 4.25rem)" }}
+          >
+            Holding
+          </p>
+        </div>
+
         {/* Tag */}
-        <div className="flex items-center gap-3 mb-8">
+        <div className="flex items-center gap-3 mb-6 md:mb-8">
           <span className="inline-block w-2 h-2 rounded-full bg-[#C9A96E]" />
           <span className="text-[#C9A96E] text-xs font-semibold tracking-[0.25em] uppercase">
             Consultoria &amp; Holding Empresarial
@@ -82,7 +94,7 @@ export default function HeroSection() {
         {/* Headline — editorial scale */}
         <h1
           className="font-serif font-bold text-[#1C1510] leading-[0.95] mb-10"
-          style={{ fontSize: "clamp(3.5rem, 9vw, 7.5rem)" }}
+          style={{ fontSize: "clamp(3rem, 8vw, 6.75rem)" }}
         >
           Solidez.
           <br />

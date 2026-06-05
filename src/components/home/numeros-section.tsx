@@ -7,7 +7,7 @@ const stats = [
 
 export default function NumerosSection() {
   return (
-    <section className="section-padding" style={{ background: "#050A18" }}>
+    <section className="section-padding" style={{ background: "#FAFAF7" }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-0 lg:divide-x lg:divide-[rgba(201,169,110,0.1)]">
           {stats.map((stat) => (
@@ -18,8 +18,8 @@ export default function NumerosSection() {
               >
                 {stat.value}
               </p>
-              <p className="text-[#F0EBE1] font-semibold text-base">{stat.label}</p>
-              <p className="text-[#8B8A9A] text-sm mt-0.5">{stat.sub}</p>
+              <p className="text-[#1C1510] font-semibold text-base">{stat.label}</p>
+              <p className="text-[#6B6057] text-sm mt-0.5">{stat.sub}</p>
             </div>
           ))}
         </div>

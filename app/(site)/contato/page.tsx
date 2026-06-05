@@ -25,7 +25,7 @@ export default function ContatoPage() {
               <br />
               <span className="text-gradient-gold">sobre seu negócio</span>
             </h1>
-            <p className="text-[#8B8075] text-lg">
+            <p className="text-[#6B6057] text-lg">
               Nossa equipe está pronta para entender seus desafios e apresentar
               as melhores soluções.
             </p>
@@ -62,10 +62,10 @@ export default function ContatoPage() {
                     <Icon className="w-4 h-4 text-[#C9A96E]" />
                   </div>
                   <div>
-                    <p className="text-[#8B8075] text-xs uppercase tracking-wider mb-1">
+                    <p className="text-[#6B6057] text-xs uppercase tracking-wider mb-1">
                       {label}
                     </p>
-                    <p className="text-[#F0EBE1] text-sm font-medium">{value}</p>
+                    <p className="text-[#1C1510] text-sm font-medium">{value}</p>
                   </div>
                 </div>
               ))}
@@ -74,10 +74,10 @@ export default function ContatoPage() {
                 <p className="text-[#C9A96E] text-xs font-semibold uppercase tracking-wider mb-3">
                   Dados Empresariais
                 </p>
-                <p className="text-[#F0EBE1] text-sm font-medium mb-1">
+                <p className="text-[#1C1510] text-sm font-medium mb-1">
                   PRIMOR PARTNERSHIP HOLDING LTDA
                 </p>
-                <p className="text-[#8B8075] text-sm">
+                <p className="text-[#6B6057] text-sm">
                   CNPJ: 59.120.382/0001-30
                 </p>
               </div>
@@ -90,14 +90,14 @@ export default function ContatoPage() {
                   <div className="w-16 h-16 rounded-full bg-[rgba(201,169,110,0.1)] border border-[rgba(201,169,110,0.2)] flex items-center justify-center mx-auto mb-6">
                     <CheckCircle className="w-8 h-8 text-[#C9A96E]" />
                   </div>
-                  <h3 className="font-serif text-2xl font-semibold text-[#F0EBE1] mb-3">
+                  <h3 className="font-serif text-2xl font-semibold text-[#1C1510] mb-3">
                     Mensagem enviada!
                   </h3>
-                  <p className="text-[#8B8075]">{state.message}</p>
+                  <p className="text-[#6B6057]">{state.message}</p>
                 </div>
               ) : (
                 <div className="card-dark p-8">
-                  <h3 className="font-serif text-xl font-semibold text-[#F0EBE1] mb-7">
+                  <h3 className="font-serif text-xl font-semibold text-[#1C1510] mb-7">
                     Envie sua mensagem
                   </h3>
 

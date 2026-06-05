@@ -34,7 +34,7 @@ const servicos = [
 
 export default function SolucoesSection() {
   return (
-    <section className="section-padding" id="solucoes" style={{ background: "#050A18" }}>
+    <section className="section-padding" id="solucoes" style={{ background: "#FAFAF7" }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header — two column */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-16 items-end">
@@ -44,7 +44,7 @@ export default function SolucoesSection() {
               O Que Fazemos
             </div>
             <h2
-              className="font-serif font-bold text-[#F0EBE1] leading-[1.05]"
+              className="font-serif font-bold text-[#1C1510] leading-[1.05]"
               style={{ fontSize: "clamp(2.25rem, 5vw, 3.5rem)" }}
             >
               Soluções para cada
@@ -53,7 +53,7 @@ export default function SolucoesSection() {
             </h2>
           </div>
           <div className="lg:text-right">
-            <p className="text-[#8B8A9A] leading-relaxed max-w-sm lg:ml-auto mb-6">
+            <p className="text-[#6B6057] leading-relaxed max-w-sm lg:ml-auto mb-6">
               Do diagnóstico à execução — expertise especializada em cada etapa
               da jornada empresarial.
             </p>
@@ -65,7 +65,7 @@ export default function SolucoesSection() {
         </div>
 
         {/* Numbered editorial list */}
-        <div className="border-b border-[rgba(255,255,255,0.07)]">
+        <div className="border-b border-[rgba(0,0,0,0.07)]">
           {servicos.map(({ num, title, desc, tag, href }) => (
             <Link key={num} href={href} className="service-row group block">
               {/* Number */}
@@ -75,7 +75,7 @@ export default function SolucoesSection() {
               {/* Content */}
               <div>
                 <h3 className="service-row-title mb-2">{title}</h3>
-                <p className="text-[#8B8A9A] text-sm leading-relaxed max-w-lg">{desc}</p>
+                <p className="text-[#6B6057] text-sm leading-relaxed max-w-lg">{desc}</p>
                 <span className="inline-block mt-3 px-3 py-1 text-[0.65rem] font-semibold tracking-widest uppercase text-[#C9A96E] border border-[rgba(201,169,110,0.2)] rounded-full">
                   {tag}
                 </span>

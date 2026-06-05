@@ -42,12 +42,12 @@ export default function SobreSection() {
               <br />
               <span className="text-gradient-gold">DNA estratégico</span>
             </h2>
-            <p className="text-[#8B8075] leading-relaxed mb-5">
+            <p className="text-[#6B6057] leading-relaxed mb-5">
               A Primor Holding nasceu da visão de João Antonio Lopes Corrêa de criar uma
               estrutura empresarial que vai além da simples gestão de ativos. Somos um
               grupo comprometido com a excelência em cada decisão.
             </p>
-            <p className="text-[#8B8075] leading-relaxed mb-8">
+            <p className="text-[#6B6057] leading-relaxed mb-8">
               Com mais de 15 anos de mercado, construímos um portfólio diversificado de
               empresas e um time de consultores que une expertise técnica à sensibilidade
               de negócios.
@@ -55,7 +55,7 @@ export default function SobreSection() {
 
             <ul className="space-y-3 mb-10">
               {pilares.map((pilar) => (
-                <li key={pilar} className="flex items-center gap-3 text-sm text-[#F0EBE1]">
+                <li key={pilar} className="flex items-center gap-3 text-sm text-[#1C1510]">
                   <div className="w-5 h-5 rounded-full bg-[rgba(201,169,110,0.12)] border border-[rgba(201,169,110,0.25)] flex items-center justify-center flex-shrink-0">
                     <Check className="w-3 h-3 text-[#C9A96E]" />
                   </div>
@@ -81,8 +81,8 @@ export default function SobreSection() {
                   <Icon className="w-5 h-5 text-[#C9A96E]" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-[#F0EBE1] mb-1.5">{title}</h3>
-                  <p className="text-[#8B8075] text-sm leading-relaxed">{desc}</p>
+                  <h3 className="font-semibold text-[#1C1510] mb-1.5">{title}</h3>
+                  <p className="text-[#6B6057] text-sm leading-relaxed">{desc}</p>
                 </div>
               </div>
             ))}

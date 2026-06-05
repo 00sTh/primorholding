@@ -35,7 +35,7 @@ export default function DepoimentosSection() {
               O Que Dizem
             </div>
             <h2
-              className="font-serif font-bold text-[#F0EBE1] leading-[1.05]"
+              className="font-serif font-bold text-[#1C1510] leading-[1.05]"
               style={{ fontSize: "clamp(2rem, 4.5vw, 3rem)" }}
             >
               Clientes que
@@ -49,7 +49,7 @@ export default function DepoimentosSection() {
           {depoimentos.map((d, i) => (
             <div key={i} className="testimonial-card flex flex-col">
               <Quote className="w-7 h-7 text-[#C9A96E] opacity-50 mb-5 flex-shrink-0" />
-              <p className="text-[#F0EBE1] text-sm leading-relaxed flex-1 mb-6 italic">
+              <p className="text-[#1C1510] text-sm leading-relaxed flex-1 mb-6 italic">
                 &ldquo;{d.quote}&rdquo;
               </p>
               <div className="flex items-center gap-3 pt-5 border-t border-[rgba(201,169,110,0.1)]">
@@ -57,8 +57,8 @@ export default function DepoimentosSection() {
                   <span className="text-[#C9A96E] text-xs font-bold font-serif">{d.inicial}</span>
                 </div>
                 <div>
-                  <p className="text-[#F0EBE1] text-sm font-semibold leading-tight">{d.nome}</p>
-                  <p className="text-[#8B8A9A] text-xs">{d.cargo}</p>
+                  <p className="text-[#1C1510] text-sm font-semibold leading-tight">{d.nome}</p>
+                  <p className="text-[#6B6057] text-xs">{d.cargo}</p>
                 </div>
               </div>
             </div>
