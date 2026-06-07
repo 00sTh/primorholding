@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   keywords: ["consultoria empresarial", "holding", "estratégia", "M&A", "gestão"],
   authors: [{ name: "Primor Holding" }],
   metadataBase: new URL(
-    process.env.NEXT_PUBLIC_SITE_URL || "https://primor-holding.vercel.app"
+    process.env.NEXT_PUBLIC_SITE_URL || "https://primorholdingp.com.br"
   ),
 };
 

@@ -74,7 +74,7 @@ Copie `.env.example` para `.env.local` e preencha:
 | `CLOUDINARY_CLOUD_NAME` | Nome do cloud no Cloudinary |
 | `CLOUDINARY_API_KEY` | API Key do Cloudinary |
 | `CLOUDINARY_API_SECRET` | API Secret do Cloudinary |
-| `NEXT_PUBLIC_SITE_URL` | URL do site em producao (ex: `https://primorholding.vercel.app`) |
+| `NEXT_PUBLIC_SITE_URL` | URL do site em producao (ex: `https://primorholdingp.com.br`) |
 
 ## Deploy no Vercel
 

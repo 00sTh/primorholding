@@ -3,7 +3,7 @@
 ## Project
 
 - **Path:** `/home/sth/PrimorHolding`
-- **URL:** `primor-holding.vercel.app` ✅ | **Vercel:** `00sths-projects`
+- **URL:** `primorholdingp.com.br` ✅ | **Vercel:** `00sths-projects`
 - **GitHub:** `00sTh/primorholding`
 - **Stack:** Next.js 16 (App Router), TypeScript, Tailwind CSS v4, Prisma 7 + Neon, JWT admin, pnpm
 - **Node:** via nvm (`source /home/sth/.nvm/nvm.sh`)
